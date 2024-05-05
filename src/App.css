@@ -15,11 +15,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,6 +28,48 @@
   color: #61dafb;
 }
 
+.todolist-container {
+  max-width: 33rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #61dafb;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #54d4f7;
+}
+li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.todo-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+.todo-list li.completed {
+  text-decoration: line-through;
+}
+.task {
+  margin-right: 1em;
+}
+.deadline {
+  margin-left: 1em;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
